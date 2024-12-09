@@ -140,9 +140,9 @@ export const inputStatusData =
     "symbolRate": "27.5"
 }
 export const SystemData ={
-    'serialNumber':"serialTest",
-    'name':'nameTest',
-    'systemVersion':'versionTest',
+    'serialNumber':"2345-13129",
+    'name':'TVRO 4',
+    'systemVersion':'2.5.6.0 ',
     'systemTime':new Date().toLocaleTimeString(),
-    'temperature':'40°C'
+    'temperature':'50°C'
 }
