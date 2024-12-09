@@ -34,14 +34,14 @@ const SNRMarginGraph: React.FC = () => {
           const config = {
             method: "post",
             maxBodyLength: Infinity,
-            url: "http://localhost:8080/api/snmp/snrMargin",
+            url: "http://localhost:8080/api/snmp/snrMargintest",
             headers: {
               "Content-type": "text/plain",
             },
             data: ipAddress,
           };
           const response = await axios(config);
-            `http://localhost:8080/api/snmp/snrMargin`
+            `http://localhost:8080/api/snmp/snrMargintest`
             console.log(response.data)
           const newTime = new Date().toLocaleTimeString();
           const newSNRMargin = response.data; // Adjust based on your API response

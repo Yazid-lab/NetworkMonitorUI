@@ -10,6 +10,7 @@ import {
 import '@xyflow/react/dist/style.css';
 import './index.css'
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const nodes1: Node[] = [
   { id: '1', type: 'default', data: { label: 'Decoder 1: 192.168.10.21' }, position: { x: 150, y: 50 } },
@@ -26,6 +27,7 @@ export default function App() {
  }
   return (
       <div className='reactFlowContainer'>
+        <Navbar></Navbar>
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
